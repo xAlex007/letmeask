@@ -41,6 +41,21 @@ yarn install
 yarn start
 # ou npm run start
 
+#Fragment
+<Fragment></Fragment>
+
+#Modal
+yarn add react-modal
+yarn add @types/react-modal -D
+
+#Form
+yarn add react-hook-form #Formulário
+yarn add @hookform/resolvers #Validação
+yarn add yup #Validação
+
+#Classnames
+yarn add classnames
+
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
 ```

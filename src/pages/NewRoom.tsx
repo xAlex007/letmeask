@@ -8,11 +8,15 @@ import logoImg from '../assets/images/logo.svg'
 import '../styles/auth.scss'
 import { Button } from '../components/Button'
 import { database } from '../services/firebase'
+import { ThemeButton } from '../components/ThemeButton'
+import { useTheme } from '../hooks/useTheme'
+import { Logo } from '../components/Logo'
 
 
 export function NewRoom() {
     const { user } = useAuth()
     const history = useHistory()
+    const { theme, toggleTheme } = useTheme()
     const [newRoom, setNewRoom] = useState('')
 
     async function handleCreateRoom(event: FormEvent) {
@@ -32,7 +36,7 @@ export function NewRoom() {
     }
 
     return (
-        <div id="page-auth">
+        <div id="page-auth" className={theme}>
             <aside>
                 <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
                 <strong>Crie salas de Q&amp;A ao vivo</strong>
@@ -41,13 +45,18 @@ export function NewRoom() {
 
             <main>
                 <div className="main-content">
-                    <img src={logoImg} alt="LetMeAsk" />
-                    <h2>Criar uma nova sala</h2>
-                    <form onSubmit={handleCreateRoom}>
-                        <input type="text" placeholder="Nome da sala" onChange={event => setNewRoom(event.target.value)} value={newRoom} />
-                        <Button type="submit">Criar sala</Button>
-                    </form>
-                    <p>Quer entrar em uma sala existente? <Link to="/">Clique aqui.</Link></p>
+                    <div className="navbar">
+                        <ThemeButton onClick={toggleTheme}></ThemeButton>
+                    </div>
+                    <div className="content">
+                        <Logo className={theme}></Logo>
+                        <h2>Criar uma nova sala</h2>
+                        <form onSubmit={handleCreateRoom}>
+                            <input type="text" placeholder="Nome da sala" onChange={event => setNewRoom(event.target.value)} value={newRoom} />
+                            <Button type="submit">Criar sala</Button>
+                        </form>
+                        <p>Quer entrar em uma sala existente? <Link to="/">Clique aqui.</Link></p>
+                    </div>
                 </div>
             </main>
         </div>

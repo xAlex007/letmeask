@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import cN from 'classnames'
 import './styles.scss'
 
 type QuestionProps = {
@@ -7,20 +8,27 @@ type QuestionProps = {
         name: string,
         avatar: string,
     }
-    children?: ReactNode
+    children?: ReactNode,
+    isAnswered?: boolean,
+    isHighlited?: boolean
 }
 
-export function Question(props: QuestionProps) {
+export function Question(/*props*/{ content, author, isAnswered = false, isHighlited = false, children }: QuestionProps) {
     return (
-        <div className="question">
-            <p>{props.content}</p>
+        /*className={`question ${isAnswered ? 'answered' : ''} ${isHighlited ? 'highlighted' : ''}`}*/
+        <div className={cN(
+            'question',
+            { answered: isAnswered },
+            { highlighted: isHighlited && !isAnswered }
+        )}>
+            <p>{content}</p>
             <footer>
                 <div className="user-info">
-                    <img src={props.author.avatar} alt={props.author.name} />
-                    <span>{props.author.name}</span>
+                    <img src={author.avatar} alt={author.name} />
+                    <span>{author.name}</span>
                 </div>
-                <div>{props.children}</div>
+                <div>{children}</div>
             </footer>
-        </div>
+        </div >
     )
 }

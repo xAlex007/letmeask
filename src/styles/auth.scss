@@ -3,6 +3,11 @@
     align-items: stretch;
     height: 100vh;
 
+    &.dark{
+        background:#29292e;
+        color: #fafafa;
+    }
+
     aside{
         flex: 7;
 
@@ -32,11 +37,11 @@
             color: #f8f8f8;
         }
     }
-
+    
     main{
         flex: 8;
 
-        padding: 0 32px;
+        padding: 0 2rem;
 
         display: flex;
         align-items: center;
@@ -45,47 +50,60 @@
 
     .main-content{
         display: flex;
-        flex-direction: column;
+        flex-direction: column;        
         width: 100%;
-        max-width: 320px;
-        align-items: stretch;
-        text-align: center;
+        height: 100%;
+        align-items: center;
 
-        > img{
-            align-self: center;
+        .navbar{
+            position: relative;
+            top: 2rem;
+            align-self: flex-end;
         }
-
-        h2 {
-            font-size: 24px;
-            margin: 64px 0 24px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        form{
-            input{
-                height: 50px;
-                border-radius: 8px;
-                padding: 0 16px;
-                background: #FFF;
-                border: 1px solid #a8a8b3;
+        
+        .content{
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            justify-content: center;
+            width: 320px;            
+    
+            > svg{
+                align-self: center;
             }
-
-            button{
-                margin-top: 16px;                
+    
+            h2 {
+                font-size: 24px;
+                margin: 64px 0 24px;
+                font-family: 'Poppins', sans-serif;
             }
-
-            button, input{
-                width: 100%;
+    
+            form{
+                input{
+                    height: 50px;
+                    border-radius: 8px;
+                    padding: 0 16px;
+                    background: #FFF;
+                    border: 1px solid #a8a8b3;
+                }
+    
+                button{
+                    margin-top: 16px;                
+                }
+    
+                button, input{
+                    width: 100%;
+                }
             }
-        }
-
-        p {
-            font-size: 14px;
-            color: #737380;
-            margin-top: 16px;
-
-            a {
-                color: #e559f9;
+    
+            p {
+                font-size: 14px;
+                color: #737380;
+                margin-top: 16px;
+    
+                a {
+                    color: #e559f9;
+                }
             }
         }
     }
