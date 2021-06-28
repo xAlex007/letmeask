@@ -9,6 +9,7 @@ import { FormEvent, useState } from 'react'
 import { database } from '../services/firebase'
 import { useTheme } from '../hooks/useTheme'
 import { ThemeButton } from '../components/ThemeButton'
+import { Toaster } from 'react-hot-toast'
 
 export function Home() {
     const history = useHistory()
@@ -48,6 +49,7 @@ export function Home() {
 
     return (
         <div id="page-auth" className={theme}>
+
             <aside>
                 <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
                 <strong>Crie salas de Q&amp;A ao vivo</strong>

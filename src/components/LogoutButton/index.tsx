@@ -6,7 +6,7 @@ type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 export function LogoutButton(props: ButtonProps) {
     return (
         <button className="logout-button" {...props}>
-            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#835afd">
+            <svg xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#835afd">
                 <title>Logout</title>
                 <g>
                     <path d="M0,0h24v24H0V0z" fill="none" />

@@ -64,7 +64,6 @@ export function Room() {
     return (
         <div id="page-room" className={theme}>
             <header>
-                <div><Toaster /></div>
                 <div className="content">
                     <Logo />
                     <div>
@@ -101,7 +100,7 @@ export function Room() {
                 </form>
 
                 <div className="question-list">
-                    {questions.length == 0 ? (
+                    {questions.length === 0 ? (
                         <div className="no-questions">
                             <img src={noQuestionsImg} alt="Sem perguntas aqui." height="200rem" />
                             <div>
