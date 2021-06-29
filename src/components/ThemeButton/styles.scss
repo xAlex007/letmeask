@@ -1,22 +1,22 @@
-.theme-button{
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+.theme-button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-.dark {    
-    .theme-button{                   
-        svg{
-            fill: #fafafa;
-        }
-
-        &:hover{
-            svg{
-                fill: #835afd;
-                transition: fill 0.2s ease;
-            }
-        }
+.dark {
+  .theme-button {
+    svg {
+      fill: #fafafa;
     }
+
+    &:hover {
+      svg {
+        fill: #835afd;
+        transition: fill 0.2s ease;
+      }
+    }
+  }
 }

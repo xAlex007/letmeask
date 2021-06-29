@@ -10,20 +10,21 @@
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
+#### **Website** ([React](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/))
 
--   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+- **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
 
-> Veja o arquivo  [package.json](./package.json)
+> Veja o arquivo [package.json](./package.json)
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
 
--   Protótipo:  **[Figma](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask)**
--   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
+- Protótipo: **[Figma](https://www.figma.com/file/u0BQK8rCf2KgzcukdRRCWh/Letmeask)**
+- Editor: **[Visual Studio Code](https://code.visualstudio.com/)**
 
 ---
 
 ## 🚀 Executando o projeto
+
 ### Pré-requisitos
 
 Instalar na máquina as seguintes ferramentas:

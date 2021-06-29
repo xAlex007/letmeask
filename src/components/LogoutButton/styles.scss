@@ -1,23 +1,22 @@
-.logout-button{
-    background: transparent;
-    border: 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
+.logout-button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-.dark {    
-    .logout-button{
-
-        svg{
-            fill: #fafafa;
-        }
-
-        &:hover{
-            svg{
-                fill: #835afd;
-                transition: fill 0.2s ease;
-            }
-        }
+.dark {
+  .logout-button {
+    svg {
+      fill: #fafafa;
     }
+
+    &:hover {
+      svg {
+        fill: #835afd;
+        transition: fill 0.2s ease;
+      }
+    }
+  }
 }

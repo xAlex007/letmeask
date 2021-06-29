@@ -1,59 +1,58 @@
-#loading{
-    path{
-        animation: stroke_fill 1.5s linear forwards;
-        stroke-dasharray: 324.774;
-        stroke-dashoffset: 324.774;
-    }
+#loading {
+  path {
+    animation: stroke_fill 1.5s linear forwards;
+    stroke-dasharray: 324.774;
+    stroke-dashoffset: 324.774;
+  }
 
-    @keyframes stroke_fill {
-        0% {
-            
-        }
-        100% {
-            stroke-dashoffset: 0;
-        }    
+  @keyframes stroke_fill {
+    0% {
     }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
 
-    g{
-        path{
-            animation: text_flash 1.5s infinite;
-            fill: none;
-            &#e{
-                animation-delay: 50ms;
-            }
-            &#t{
-                animation-delay: 100ms;
-            }
-            &#m{
-                animation-delay: 150ms;
-            }
-            &#e2{
-                animation-delay: 200ms;
-            }
-            &#a{
-                animation-delay: 250ms;
-            }        
-            &#s{
-                animation-delay: 300ms;
-            }
-            &#k{
-                animation-delay: 350ms;
-            }
-        }        
+  g {
+    path {
+      animation: text_flash 1.5s infinite;
+      fill: none;
+      &#e {
+        animation-delay: 50ms;
+      }
+      &#t {
+        animation-delay: 100ms;
+      }
+      &#m {
+        animation-delay: 150ms;
+      }
+      &#e2 {
+        animation-delay: 200ms;
+      }
+      &#a {
+        animation-delay: 250ms;
+      }
+      &#s {
+        animation-delay: 300ms;
+      }
+      &#k {
+        animation-delay: 350ms;
+      }
     }
+  }
 
-    @keyframes text_flash {
-        0% {
-            fill: url(#paint1_linear);           
-        }
-        100%{
-            fill: none;           
-        }
+  @keyframes text_flash {
+    0% {
+      fill: url(#paint1_linear);
     }
+    100% {
+      fill: none;
+    }
+  }
 }
 
 .dark {
-    path.outtext{
-        fill: #fafafa;
-    }
+  path.outtext {
+    fill: #fafafa;
+  }
 }
